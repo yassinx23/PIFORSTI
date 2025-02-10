@@ -12,7 +12,7 @@ public class MyDateBase {
     private Connection cnx;// 🟢 Déclare la variable cnx ici
     private static MyDateBase myDataBase;
 
-    Private MyDateBase() {
+    private MyDateBase() {
         try {
             cnx = DriverManager.getConnection(URL, USER, PWD);
             System.out.println("Connexion établie");

@@ -2,7 +2,7 @@ package models;
 
 import java.util.Date;
 
-public class Application {
+public class Applications {
     private int applicationId;
     private int userId;
     private int jobId;
@@ -11,10 +11,10 @@ public class Application {
     private String coverLetter;
 
     // 🔹 Constructeur par défaut
-    public Application() {}
+    public Applications() {}
 
     // 🔹 Constructeur sans applicationId (ajout sans auto-incrémentation)
-    public Application(int userId, int jobId, Date appliedDate, String status, String coverLetter) {
+    public Applications(int userId, int jobId, Date appliedDate, String status, String coverLetter) {
         this.userId = userId;
         this.jobId = jobId;
         this.appliedDate = appliedDate;
@@ -23,7 +23,7 @@ public class Application {
     }
 
     // 🔹 Constructeur avec applicationId
-    public Application(int applicationId, int userId, int jobId, Date appliedDate, String status, String coverLetter) {
+    public Applications(int applicationId, int userId, int jobId, Date appliedDate, String status, String coverLetter) {
         this.applicationId = applicationId;
         this.userId = userId;
         this.jobId = jobId;
