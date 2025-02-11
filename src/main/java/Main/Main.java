@@ -1,30 +1,34 @@
 package Main;
 
-import models.Applications;
+import models.Job;
+import Service.JobService;
 import tools.MyDateBase;
-import Service.ApplicationService;
+
 import java.sql.SQLException;
-import java.time.LocalDate;
-import java.sql.Date;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // Convert LocalDate to java.sql.Date
-        LocalDate localDate = LocalDate.now();
-        Date appliedDate = Date.valueOf(localDate); // Conversion de LocalDate en java.sql.Date
-
-        // Create an Application instance
-        Applications ap = new Applications(2, 102, appliedDate, "refusé", "This is a sample cover letter.");
-
-        // Initialize ApplicationService
-        ApplicationService applicationService = new ApplicationService();
+        JobService jobService = new JobService();
 
         try {
-            // Try adding the application to the database
-            applicationService.ajouter(ap);
-            System.out.println("Application added successfully.");
+            // Ajouter un job
+            Job job = new Job(0, "Développeur Java", "Développement d'applications", 1, "Paris", "CDI",
+                    new java.util.Date(), new java.util.Date(), true);
+            jobService.ajouter(job);
+            System.out.println("Job ajouté");
+
+            // Modifier un job
+            job.setTitle("Développeur Full Stack");
+            jobService.modifier(job);
+            System.out.println("Job modifié");
+
+            // Récupérer tous les jobs
+            List<Job> jobs = jobService.recuperer();
+            jobs.forEach(System.out::println);
+
         } catch (SQLException e) {
-            System.err.println("An error occurred while adding the application: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }
