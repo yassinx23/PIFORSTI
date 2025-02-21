@@ -5,13 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91e45179-54f3-484c-8509-ae9a18833094" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/IJobService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/JobService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main/MainFx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/AddJobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/CandidatureListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/EditJobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/JobList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/JobListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/ModificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/PostulationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/add_job.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/candidature_list.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edit_job.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/job_list.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/job_list_rh.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/modification.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/postulation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Service/ApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/ApplicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/IJobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/IJobService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/JobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/JobService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Applications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Applications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Job.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +39,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/21/javafx-graphics-21-sources.jar!/javafx/application/Application.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -38,25 +60,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "YassineBA",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/yassi/OneDrive/Desktop/projetPI/FORSTI/src/main/java/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.MainFx.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainFx.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.FORSTI [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.FORSTI [org.openjfx:javafx-maven-plugin:0.0.8:run].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;YassineBA&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yassi/AppData/Local/SceneBuilder/runtime/lib&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/yassi/OneDrive/Desktop/projetPI/FORSTI/src/main/java/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="FORSTI" />
@@ -64,9 +92,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainFx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.MainFx" />
+      <module name="FORSTI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main.MainFx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.MainFx" />
+      <module name="FORSTI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main.MainFx" />
+        <item itemvalue="Application.MainFx" />
       </list>
     </recent_temporary>
   </component>
@@ -94,10 +150,32 @@
       <workItem from="1739228900687" duration="16000" />
       <workItem from="1739228928098" duration="30000" />
       <workItem from="1739300481963" duration="5686000" />
+      <workItem from="1739367003828" duration="793000" />
+      <workItem from="1739367940290" duration="1196000" />
+      <workItem from="1739521889672" duration="3628000" />
+      <workItem from="1739528332397" duration="2391000" />
+      <workItem from="1739978962646" duration="16750000" />
+      <workItem from="1740019295997" duration="2177000" />
+      <workItem from="1740021503193" duration="3570000" />
+      <workItem from="1740052097831" duration="2347000" />
+      <workItem from="1740054483694" duration="5701000" />
+      <workItem from="1740060403323" duration="858000" />
+      <workItem from="1740061373922" duration="58000" />
+      <workItem from="1740061485780" duration="1001000" />
+      <workItem from="1740063675558" duration="643000" />
+      <workItem from="1740065735760" duration="4925000" />
+      <workItem from="1740071317512" duration="15957000" />
+      <workItem from="1740098665822" duration="161000" />
+      <workItem from="1740098838789" duration="4960000" />
+      <workItem from="1740104843190" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.CandidatureListController"
+            style="-fx-background-color: #BAD2E0; -fx-padding: 20px;">
+
+    <VBox spacing="20" alignment="CENTER" prefWidth="450" layoutX="50" layoutY="30">
+
+        <Label text="Candidatures"
+               style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #113356;"/>
+
+        <ListView fx:id="candidatureListView" prefHeight="250"
+                  style="-fx-background-color: #FFFFFF;
+                         -fx-border-color: #3078CD;
+                         -fx-border-radius: 10px;
+                         -fx-padding: 5px;
+                         -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 4);"/>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Modifier" onAction="#modifier"
+                    style="-fx-background-color: #25456B;
+                           -fx-text-fill: white;
+                           -fx-font-size: 14px;
+                           -fx-padding: 10px 20px;
+                           -fx-background-radius: 10px;"/>
+
+            <Button text="Supprimer" onAction="#supprimer"
+                    style="-fx-background-color: #D04C4C;
+                           -fx-text-fill: white;
+                           -fx-font-size: 14px;
+                           -fx-padding: 10px 20px;
+                           -fx-background-radius: 10px;"/>
+        </HBox>
+    </VBox>
+</AnchorPane>

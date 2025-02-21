@@ -7,13 +7,13 @@ public class Applications {
     private int userId;
     private int jobId;
     private Date appliedDate;
-    private String status;
-    private String coverLetter;
+    private String status;      // Statut de la candidature
+    private String coverLetter; // Lettre de motivation de la candidature
 
-    // 🔹 Constructeur par défaut
+    // Constructeur par défaut
     public Applications() {}
 
-    // 🔹 Constructeur sans applicationId (ajout sans auto-incrémentation)
+    // Constructeur sans applicationId (ajout sans auto-incrémentation)
     public Applications(int userId, int jobId, Date appliedDate, String status, String coverLetter) {
         this.userId = userId;
         this.jobId = jobId;
@@ -22,7 +22,7 @@ public class Applications {
         this.coverLetter = coverLetter;
     }
 
-    // 🔹 Constructeur avec applicationId
+    // Constructeur avec applicationId
     public Applications(int applicationId, int userId, int jobId, Date appliedDate, String status, String coverLetter) {
         this.applicationId = applicationId;
         this.userId = userId;
@@ -32,29 +32,59 @@ public class Applications {
         this.coverLetter = coverLetter;
     }
 
-    // 🔹 Getters & Setters
-    public int getApplicationId() { return applicationId; }
-    public void setApplicationId(int applicationId) { this.applicationId = applicationId; }
+    // Getters & Setters pour tous les champs
+    public int getApplicationId() {
+        return applicationId;
+    }
 
-    public int getUserId() { return userId; }
-    public void setUserId(int userId) { this.userId = userId; }
+    public void setApplicationId(int applicationId) {
+        this.applicationId = applicationId;
+    }
 
-    public int getJobId() { return jobId; }
-    public void setJobId(int jobId) { this.jobId = jobId; }
+    public int getUserId() {
+        return userId;
+    }
 
-    public Date getAppliedDate() { return appliedDate; }
-    public void setAppliedDate(Date appliedDate) { this.appliedDate = appliedDate; }
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
 
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+    public int getJobId() {
+        return jobId;
+    }
 
-    public String getCoverLetter() { return coverLetter; }
-    public void setCoverLetter(String coverLetter) { this.coverLetter = coverLetter; }
+    public void setJobId(int jobId) {
+        this.jobId = jobId;
+    }
 
-    // 🔹 Méthode toString()
+    public Date getAppliedDate() {
+        return appliedDate;
+    }
+
+    public void setAppliedDate(Date appliedDate) {
+        this.appliedDate = appliedDate;
+    }
+
+    public String getStatus() {
+        return status;  // Retourne le statut de la candidature
+    }
+
+    public void setStatus(String status) {
+        this.status = status;  // Définit le statut de la candidature
+    }
+
+    public String getCoverLetter() {
+        return coverLetter;  // Retourne la lettre de motivation
+    }
+
+    public void setCoverLetter(String coverLetter) {
+        this.coverLetter = coverLetter;  // Définit la lettre de motivation
+    }
+
+    // Méthode toString() pour afficher l'objet Applications sous forme de chaîne de caractères
     @Override
     public String toString() {
-        return "Application{" +
+        return "Applications{" +
                 "applicationId=" + applicationId +
                 ", userId=" + userId +
                 ", jobId=" + jobId +

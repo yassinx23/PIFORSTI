@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BAD2E0; -fx-padding: 20px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditJobController">
+
+    <!-- Titre de l'interface -->
+    <Label style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #113356;" text="Modifier l'Emploi" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+
+    <!-- Champs de saisie pour l'emploi -->
+    <Label text="Titre:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="titleField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label text="Description:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <TextField fx:id="descriptionField" prefHeight="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label text="Lieu:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField fx:id="locationField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Label text="Type:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <TextField fx:id="typeField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <!-- Boutons -->
+    <GridPane fx:id="buttonPane" hgap="10" style="-fx-padding: 10px;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <Button onAction="#handleUpdateJob" style="-fx-background-color: #25456B; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10px 25px; -fx-background-radius: 10px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 3);" text="Mettre à jour" GridPane.columnIndex="8" />
+        <Button onAction="#handleCancel" style="-fx-background-color: #D32F2F; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10px 25px; -fx-background-radius: 10px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 3);" text="Annuler" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="30" />
+        <ColumnConstraints percentWidth="70" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="10" />
+        <RowConstraints percentHeight="15" />
+        <RowConstraints percentHeight="15" />
+        <RowConstraints percentHeight="15" />
+        <RowConstraints percentHeight="15" />
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="10" />
+    </rowConstraints>
+</GridPane>

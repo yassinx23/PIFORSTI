@@ -1,8 +1,7 @@
 package Main;
 
-import models.Job;
 import Service.JobService;
-import tools.MyDateBase;
+import models.Job;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -12,23 +11,20 @@ public class Main {
         JobService jobService = new JobService();
 
         try {
-            // Ajouter un job
-            Job job = new Job(0, "Développeur Java", "Développement d'applications", 1, "Paris", "CDI",
-                    new java.util.Date(), new java.util.Date(), true);
-            jobService.ajouter(job);
-            System.out.println("Job ajouté");
+            // Tester la récupération des données
+            List<Job> jobs = jobService.recupererAll();  // Utiliser recupererAll() au lieu de recuperer()
 
-            // Modifier un job
-            job.setTitle("Développeur Full Stack");
-            jobService.modifier(job);
-            System.out.println("Job modifié");
-
-            // Récupérer tous les jobs
-            List<Job> jobs = jobService.recuperer();
-            jobs.forEach(System.out::println);
-
+            // Afficher les données récupérées
+            for (Job job : jobs) {
+                System.out.println("Job ID: " + job.getJobId());
+                System.out.println("Title: " + job.getTitle());
+                System.out.println("Description: " + job.getDescription());
+                System.out.println("Location: " + job.getLocation());
+                System.out.println("Job Type: " + job.getJobType());
+                System.out.println("-------------------------------------");
+            }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.err.println("Erreur lors de la récupération des jobs : " + e.getMessage());
         }
     }
 }

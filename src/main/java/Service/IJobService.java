@@ -10,6 +10,9 @@ public interface IJobService {
 
     List<Job> recuperer() throws SQLException;
 
+    // Ajouter la méthode recupererAll()
+    List<Job> recupererAll() throws SQLException;
+
     void modifier(Job job) throws SQLException;
 
     void supprimer(int jobId) throws SQLException;
