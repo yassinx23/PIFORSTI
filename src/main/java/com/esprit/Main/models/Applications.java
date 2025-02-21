@@ -1,4 +1,4 @@
-package models;
+package com.esprit.Main.models;
 
 import java.util.Date;
 

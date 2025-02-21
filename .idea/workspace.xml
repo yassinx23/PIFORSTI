@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91e45179-54f3-484c-8509-ae9a18833094" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/controllers/ForumController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/controllers/MainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/controllers/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/ApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/ApplicationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/IService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Applications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Applications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/MyDateBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/MyDateBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/ApplicationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/Service/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Applications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/models/Applications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tools/MyDateBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/tools/MyDateBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +26,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -40,9 +49,15 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainApp.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/May/IdeaProjects/PIFORSTI-master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,21 +65,52 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/yassi/OneDrive/Desktop/projetPI/FORSTI/src/main/java/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\May\IdeaProjects\PIFORSTI\src\main\java\com\esprit\Main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainApp">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.esprit.Main.controllers.Main" />
       <module name="FORSTI" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.esprit.Main.controllers.MainApp" />
+      <module name="FORSTI" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\May\.jdks\javafx-sdk-21.0.6\bin&quot; --add-modules javafx.controls,javafx.fxml " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.esprit.Main.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.MainApp" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainApp" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -90,6 +136,16 @@
       <workItem from="1739143852367" duration="602000" />
       <workItem from="1739193578377" duration="350000" />
       <workItem from="1739223203787" duration="5397000" />
+      <workItem from="1739349310400" duration="17207000" />
+      <workItem from="1739371343614" duration="2401000" />
+      <workItem from="1739517023134" duration="11882000" />
+      <workItem from="1739893404931" duration="7109000" />
+      <workItem from="1740061780409" duration="889000" />
+      <workItem from="1740063347815" duration="574000" />
+      <workItem from="1740063976885" duration="2274000" />
+      <workItem from="1740066291367" duration="445000" />
+      <workItem from="1740066747769" duration="24458000" />
+      <workItem from="1740129066105" duration="748000" />
     </task>
     <servers />
   </component>
