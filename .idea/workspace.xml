@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91e45179-54f3-484c-8509-ae9a18833094" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/controllers/ForumController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/controllers/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/controllers/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/ApplicationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/Service/IService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Applications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/models/Applications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/MyDateBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esprit/Main/tools/MyDateBase.java" afterDir="false" />
-    </list>
+    <list default="true" id="91e45179-54f3-484c-8509-ae9a18833094" name="Changes" comment="first" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -145,11 +134,24 @@
       <workItem from="1740063976885" duration="2274000" />
       <workItem from="1740066291367" duration="445000" />
       <workItem from="1740066747769" duration="24458000" />
-      <workItem from="1740129066105" duration="748000" />
+      <workItem from="1740129066105" duration="1093000" />
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <option name="closed" value="true" />
+      <created>1740130855468</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740130855468</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
 </project>

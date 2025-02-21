@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.Main.controllers.ForumDetailsController">
+    <children>
+        <!-- Liste des messages du forum -->
+        <ListView fx:id="messageListView" layoutX="50.0" layoutY="50.0" prefHeight="300.0" prefWidth="500.0" />
+
+        <!-- Champ pour écrire un message -->
+        <TextArea fx:id="messageField" layoutX="50.0" layoutY="388.0" prefHeight="61.0" prefWidth="400.0" promptText="Ajouter une publication..." />
+
+        <!-- Bouton pour envoyer un message -->
+        <Button fx:id="sendButton" layoutX="471.0" layoutY="406.0" style="-fx-background-color: #0598ff;" text="Publier" textFill="WHITE" />
+
+        <Hyperlink fx:id="backToForumAccLink" layoutX="20.0" layoutY="10.0" text="Retour à la liste des forums" />
+
+        <Button fx:id="updateButton" layoutX="471.0" layoutY="406.0" text="Republier" visible="false" />
+        <Button fx:id="deleteButton" layoutX="541.0" layoutY="406.0" text="Supprimer" visible="false" />
+
+
+
+    </children>
+</AnchorPane>
